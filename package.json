@@ -18,6 +18,7 @@
     "require": "./dist/cjs/index.js"
   },
   "scripts": {
+    "prepare": "npm run build",
     "test": "mocha -r ts-node/esm \\\"src/**/*.test.ts\\\" \\\"src/**/*.test.js\\\"",
     "build": "tsc -p tsconfig.json && tsc -p tsconfig_esm.json",
     "prepublishOnly": "npm run build"
